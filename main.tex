@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}
+\usepackage{bm}
+\usepackage{times}
+
+\setCJKmainfont{AR PL KaitiM GB}
+\setCJKsansfont{AR}
+\setCJKmonofont{AR}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\firstname{Yanchun} % Your first name
+\familyname{Zheng} % Your last name
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{37 XueYuan Road, Haidian District}{Beijing, China}
+\mobile{(+86) 16619954801}
+\email{zhengyanchun1006@163.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{photo} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-----------------------------------------------------------------
+\section{Education}
+\cventry{2016-Present}{Beihang University}{MS}{Biomedical Engineering}{GPA:3.93/4.0}{Ranking:1/100}
+\cventry{Major:}{functional near-infrared spectroscopy based brain-computer interface (fNIRS-BCI)}{}{}{}{}
+\cventry{2012-2016}{\textbf{Beihang University}}{BS}{Biomedical Engineering}{GPA:3.63/4.0}{}
+
+%--------------研究项目--------------
+\section{Research Experience}
+%--------------------------------------------------
+\cventry{2015-Present}{the Classification Algorithm for fNIRS-BCI}{}{}{}
+{
+\begin{itemize}
+\item functional near-infrared spectroscopy（fNIRS）has been more and more recognized as an important approach for brain-computer interface (BCI) due to its advantages e.g. high spatial resolution compared to EEG, robust to electromagnetic noises and motion artifacts, etc.
+\item The classification accuracy of the BCI syatem is essential. However, the reported fNIRS-BCI systems shown limited performance in terms of classification accuracy. My work is trying to implement different kinds of algorithms to improve the classification accuracy. Common spatial pattern (CSP）is one method that can extract the neural signal component specific to one condition from the datasets of multiple conditions by dissociating the neural signals into spatially separable task-common components and task-specific components. In this project, I explored the feasibility of applying CSP-based algorithm to fNIRS-BCI. This work demonstrated the effectiveness of the CSP method and has been published in \emph{Neuroscience Letters}.
+\item Another important question is, before the practical using, a long time training is necessary to be taken to build a stable classification model. That training is time comsuming and labored. Therefore, I proposed to extract the effective spatial filter by independent component analysis (ICA) from the resting state data, and then use few training data to establish the classification model. Compared with the traditional method, this method can greatly reduce the amount of training for the user. Currently, a paper based on this work is being written.
+%\item I have also been involved in some autopilot-related research, which is used to monitor the driver's brain status in real time to assess fatigue.
+\end{itemize}
+}
+
+%---------------------------------------------------
+
+\cventry{2014-2015}{Study on the Method of Detecting Carotid Atherosclerosis by PhotoPlethysmoGraphy Signal Analysisl}{}{}{}
+{
+\begin{itemize}
+\item In this project, I have analyzed the differences in pulse wave between normal and carotid atherosclerotic patients, and proposed an algorithm, which was based on wavelet transform, for noninvasive screening the carotid atherosclerosis. This algorithm can be used to quickly determine whether a subject has atherosclerotic plaque. I have estimated the algorithm with more than 80 subjects' data, and the algorithm can achieve high accuracy and sensitivity. Compared with other carotid atherosclerosis screening methods (such as imaging methods), the algorithm is simple, fast, economical and practical, and can be achieved in wearable equipment, especially for large-scale screening.
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\bigskip
+\section{Working Experience}
+\cventry {2015-2017}{Danyang Huichuang Medical Equipment  Company}{}{}{}
+{
+\begin{itemize}
+\item Responsible for patent writing and other work, completing two invention patents, writing and applying for one appearance patent and three trademark patents
+\end{itemize}
+}  
+
+%----------------------------------------------------------------------------------------
+%	
+%----------------------------------------------------------------------------------------
+%\section{交流访问}
+%\cventry{2017.07}{圣彼得堡彼得大帝理工大学}{圣彼得堡}{俄罗斯}{}
+%{
+%\begin{itemize}
+%\item 学习商科课程，以全A的成绩结业
+%\end{itemize}
+%} 
+
+
+%-----------------------------------------------------------------------
+\section{Honors}
+%\cvitem{2018}{北京航空航天大学优秀研究生}
+%\cvitem{2017}{北京航空航天大学研究生学业奖学金一等奖}
+%\cvitem{2017}{北京航空航天大学三好学生（两次）}
+%\cvitem{2017}{“工信创新创业奖学金”二等奖}
+%\cvitem{2016}{北京航空航天大学研究生新生奖学金一等奖}
+%\cvitem{2016}{北京航空航天大学优秀毕业生}
+%\cvitem{2016}{北京市优秀宿舍}
+%\cvitem{2015}{“挑战杯”全国大学生课外学术科技作品竞赛二等奖}
+%\cvitem{2015}{“挑战杯”首都大学生课外学术科技作品竞赛一等奖}
+%\cvitem{2015}{北航科技竞赛奖学金一等奖}
+%\cvitem{2015}{空客奖学金二等奖}
+%\cvitem{2014}{国家励志奖学金}
+%\cvitem{2014}{北航“冯如杯”学生科技作品竞赛二等奖}
+%\cvitem{2013}{全国大学生数学竞赛（非数学类）预赛三等奖}
+
+\cvitem{2018}{Outstanding Graduate Student in Beihang University}
+\cvitem{2017}{The First Prize of  Graduate Student Scholarship in Beihang University}
+\cvitem{2017}{“Merit Students” in Beihang University (twice)}
+\cvitem{2017}{Second Prize in Creative and Venture Scholarship of Ministry of Industry and Information Technology}
+\cvitem{2016}{The First Prize of Freshman Scholarship in Beihang University}
+\cvitem{2016}{Outstanding Graduates in Beihang University}
+\cvitem{2016}{Beijing Excellent dormitory}
+\cvitem{2015}{Second Prize in the national “Challenge Cup” for college students}
+\cvitem{2015}{First Prize in the capital “Challenge Cup” for college students}
+\cvitem{2015}{Second Prize of Airbus Scholarship}
+\cvitem{2014}{National Encouragement Scholarship}
+\cvitem{2014}{Second Prize in “Fengru Cup” in Beihang University}
+\cvitem{2013}{Third Prize in the national college students math competition}
+
+%----------------------------------------------------------------------------------------
+%	paper
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\subsection{Journal Publications}
+%\cvitem{2018}{马建爱，\underline{郑燕春}，王玲, 等. 心算和想象运动二分类的近红外光谱脑机接口范式重测信度研究[J]. 高技术通讯, 2018.（Accepted）}
+
+\cvitem{2018}{Ma Jian' ai, \underline{Zheng Yanchun}, Wang Ling, et al., The test-retest reliability of binary classification between mental arithmetic and motor imagery in functional near-infrared spectroscopy brain computer interface[J], Chinese High Technology Letters, 2018.（Accepted）}
+\cvitem{2017}{Zhang Shen*, \underline{Zheng Yanchun*}, Wang Daifa, et al., Application of a common spatial pattern-based algorithm for an fNIRS-based motor imagery brain-computer interface[J], Neuroscience Letters, 2017, 655:35-40.（*Co-first author）}
+
+%\cvitem{2017}{李喆, 张屾, \underline{郑燕春}, 等. 基于相关指数分析增强的功能近红外光谱脑机接口[J]. 科技导报, 2017, 35(2): 60-64.}
+
+\cvitem{2017}{Li Zhe, Zhang Shen, \underline{Zheng Yanchun}, et al., Enhancement of brain- computer interface using functional near-infrared spectroscopy based on correlation index analysis[J]. Science and Technology Review, 2017, 35(2): 60-64.}
+
+
+\subsection{Conference Publications}
+\cvitem{2018}{\underline{Zheng Yanchun}, Wang Daifa , Li Deyu, The application of independent component analysis (ICA)-based algorithm for fNIRS-based motor imagery brain-computer interface (BCI), fNIRS 2018 Conference, Tokyo, Japan, 2018.（Inpress）}
+\cvitem{2018}{Ma Jian' ai, Wang Ling, Tian Yizhu, \underline{Zheng Yanchun}, et al., Classification between mental arithmetic and motor imagery based on historical data, a study of brain-computer interface using functional near-infrared spectroscopy, International Conference on Biological Information and Biomedical Engineering[C]. Shanghai, China, 2018.（Accepted）}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+\end{document}
